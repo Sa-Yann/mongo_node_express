@@ -1,0 +1,422 @@
+export PATH=/Users/Eyesbreakers/mongodb-macos-x86_64-4.4.4/bin:$PATH   
+
+‎⁨drive2k21⁩/⁨LaPasserelle⁩/⁨mongodb-macos-x86_64-4.4.4⁩
+
+Last login: Tue Apr  6 11:25:51 on ttys000
+yanns-imac:~ Eyesbreakers$ mongodb -v
+-bash: mongodb: command not found
+yanns-imac:~ Eyesbreakers$ nano .bashrc
+yanns-imac:~ Eyesbreakers$ cd
+yanns-imac:~ Eyesbreakers$ ls -la
+total 1784
+drwxr-xr-x+  44 Eyesbreakers  staff    1408 Apr  6 13:48 .
+drwxr-xr-x    7 root          admin     224 Dec  1 11:30 ..
+-r--------    1 Eyesbreakers  staff       7 Jun  5  2019 .CFUserTextEncoding
+-rw-r--r--@   1 Eyesbreakers  staff   18436 Apr  6 13:47 .DS_Store
+drwx------    8 Eyesbreakers  staff     256 Apr  6 13:46 .Trash
+drwxr-xr-x    4 Eyesbreakers  staff     128 Jan 18  2016 .adobe
+-rw-------    1 Eyesbreakers  staff   15049 Apr  4 23:56 .bash_history
+-rw-r--r--    1 Eyesbreakers  staff     423 Jul 25  2019 .bash_profile
+-rw-------    1 Eyesbreakers  staff     227 Jun  7  2019 .bash_profile.save
+-rw-------    1 Eyesbreakers  staff     286 Jun  7  2019 .bash_profile.save.1
+-rw-------    1 Eyesbreakers  staff     254 Jun  7  2019 .bash_profile.save.2
+-rw-------    1 Eyesbreakers  staff     314 Jun  7  2019 .bash_profile.save.3
+-rw-------    1 Eyesbreakers  staff     313 Jun  7  2019 .bash_profile.save.4
+-rw-------    1 Eyesbreakers  staff     315 Jun  7  2019 .bash_profile.save.5
+-rw-------    1 Eyesbreakers  staff     254 Jun  7  2019 .bash_profile.save.6
+drwx------   31 Eyesbreakers  staff     992 Apr  6 13:58 .bash_sessions
+-rw-r--r--    1 Eyesbreakers  staff       0 Apr  6 13:48 .bashrc
+drwxr-xr-x    7 Eyesbreakers  staff     224 Jun  6  2019 .composer
+drwx------    6 Eyesbreakers  staff     192 Mar 24 20:08 .config
+drwx------    3 Eyesbreakers  staff      96 Sep 27  2015 .cups
+-rw-r--r--    1 Eyesbreakers  staff     358 Apr  6 10:03 .gitconfig
+-rw-r--r--@   1 Eyesbreakers  staff      82 Feb 12  2020 .gitflow_export
+-rw-r--r--@   1 Eyesbreakers  staff      13 Mar 25  2019 .gitignore_global
+drwxr-xr-x   11 Eyesbreakers  staff     352 Apr  6 10:02 .gitkraken
+-rw-r--r--@   1 Eyesbreakers  staff      27 Mar 25  2019 .hgignore_global
+drwxr-xr-x    9 Eyesbreakers  staff     288 Mar 29 21:17 .npm
+drwxr-xr-x   27 Eyesbreakers  staff     864 Jul 25  2019 .nvm
+drwxr-xr-x    3 Eyesbreakers  staff      96 Jun  7  2019 .phpls
+-rw-------    1 Eyesbreakers  staff    1214 Jun  7  2019 .viminfo
+drwxr-xr-x    4 Eyesbreakers  staff     128 Jan 17  2020 .vscode
+drwxrwxrwx    3 Eyesbreakers  staff      96 Sep  2  2016 Adobe
+drwxr-xr-x    3 Eyesbreakers  staff      96 Dec 15  2016 Applications
+drwx------+ 363 Eyesbreakers  staff   11616 Apr  6 11:56 Desktop
+drwx------+ 146 Eyesbreakers  staff    4672 Apr  1 19:26 Documents
+drwx------+ 295 Eyesbreakers  staff    9440 Apr  6 11:36 Downloads
+-rw-r--r--@   1 Eyesbreakers  staff       0 Sep 22  2014 Icon?
+drwx------@  73 Eyesbreakers  staff    2336 Feb 14 14:00 Library
+drwx------+  14 Eyesbreakers  staff     448 Dec 17 14:00 Movies
+drwx------+  12 Eyesbreakers  staff     384 Apr  6 10:23 Music
+drwx------+  15 Eyesbreakers  staff     480 Feb 28 23:47 Pictures
+drwxr-xr-x+   5 Eyesbreakers  staff     160 Sep  4  2015 Public
+drwxr-xr-x    4 Eyesbreakers  staff     128 Apr  6 13:46 bin
+-rw-r--r--@   1 Eyesbreakers  staff  263790 Jun  4  2019 composer-setup 19.33.15.php
+drwxr-xr-x@   9 Eyesbreakers  staff     288 Apr  6 13:57 mongodb-macos-x86_64-4.4.4
+yanns-imac:~ Eyesbreakers$ cat .bashrc
+yanns-imac:~ Eyesbreakers$ sudo nano /etc/paths
+Password:
+yanns-imac:~ Eyesbreakers$ sudo nano /etc/paths
+yanns-imac:~ Eyesbreakers$ cd /usr
+yanns-imac:usr Eyesbreakers$ ls 
+bin		lib		libexec		local		sbin		share		standalone
+yanns-imac:usr Eyesbreakers$ cd bin
+yanns-imac:bin Eyesbreakers$ ls
+2to3-				file				malloc_history32		seq
+2to3-2.7			filebyproc.d			man				serialver
+AssetCacheLocatorUtil		filtercalltree			manpath				servertool
+AssetCacheManagerUtil		find				mcxquery			setregion
+AssetCacheTetheratorUtil	find2perl			mcxrefresh			setuids.d
+BuildStrings			find2perl5.18			mddiagnose			sfltool
+CpMac				findrule			mdfind				sftp
+DeRez				findrule5.18			mdimport			shar
+GetFileInfo			finger				mdls				shasum
+IOAccelMemory			fixproc				mdutil				shasum5.18
+MergePef			flex				memory_pressure			shlock
+MvMac				flex++				mesg				showmount
+ResMerger			fmt				mib2c				sigdist.d
+Rez				fold				mib2c-update			sips
+RezDet				fontrestore			mig				size
+RezWack				footprint			mkbom				slogin
+SafeEjectGPU			format-sql			mkdep				smbutil
+SetFile				format-sql5.18			mkfifo				smtpd.py
+SplitForks			from				mklocale			smtpd2.7.py
+UnRezWack			fs_usage			mktemp				snfsdefrag
+a2p				funzip				mmroff				snmp-bridge-mib
+a2p5.18				fuser				mnthome				snmpbulkget
+actool				fwkdp				moo-outdated			snmpbulkwalk
+addftinfo			fwkpfv				moo-outdated5.18		snmpconf
+afclip				g++				moose-outdated			snmpdelta
+afconvert			gatherheaderdoc			moose-outdated5.18		snmpdf
+afhash				gcc				more				snmpget
+afida				gcore				mp2bug				snmpgetnext
+afinfo				gcov				msgs				snmpinform
+afmtodit			gdiffmk				nano				snmpnetstat
+afplay				gem				nasm				snmpset
+afscexpand			gen_bridge_metadata		native2ascii			snmpstatus
+agentxtrap			gencat				nbdst				snmptable
+agvtool				genstrings			nc				snmptest
+alias				getconf				ncal				snmptranslate
+applesingle			getopt				ncctl				snmptrap
+appletviewer			getopts				ncdestroy			snmpusm
+apply				git				ncinit				snmpvacm
+apropos				git-cvsserver			nclist				snmpwalk
+apt				git-receive-pack		ncurses5.4-config		sntp
+ar				git-shell			ndisasm				soelim
+arch				git-upload-archive		neqn				sort
+as				git-upload-pack			net-server			spfd
+asa				gm4				net-server5.18			spfd5.18
+asctl				gnumake				net-snmp-cert			spfquery
+assetutil			gperf				net-snmp-config			spfquery5.18
+at				grep				net-snmp-create-v3-user		splain
+atos				grn				nettop				splain5.18
+atq				grodvi				newaliases			split
+atrm				groff				newgrp				sqlite3
+atsutil				groffer				newproc.d			ssh
+automator			grog				nfsstat				ssh-add
+auval				grolbp				nice				ssh-agent
+auvaltool			grolj4				nl				ssh-copy-id
+avbdiagnose			grops				nm				ssh-keygen
+avbutil				grotty				nmedit				ssh-keyscan
+avconvert			groups				nohup				stapler
+avmetareadwrite			gunzip				notifyutil			stat
+awk				gzcat				nroff				stringdups
+banner				gzexe				nscurl				stringdups32
+base64				gzip				nslookup			strings
+basename			h2ph				nsupdate			strip
+bashbug				h2ph5.18			objdump				stty.pl
+batch				h2xs				ocspcheck			stty5.18.pl
+bc				h2xs5.18			od				su
+bg				hash				odutil				sudo
+biff				hdid				open				sum
+binhex				hdiutil				opendiff			svn
+binhex.pl			hdxml2manxml			opensnoop			svnadmin
+binhex5.18.pl			head				openssl				svndumpfilter
+bioutil				headerdoc2html			orbd				svnlook
+bison				heap				osacompile			svnserve
+bitesize.d			heap32				osadecompile			svnsync
+brctl				hexdump				osalang				svnversion
+bsdtar				hidutil				osascript			sw_vers
+bspatch				hiutil				otool				swift
+btmmdiagnose			host				pack200				swiftc
+bunzip2				hostinfo			package-stash-conflicts		symbols
+bzcat				hotspot.d			package-stash-conflicts5.18	symbolscache
+bzcmp				hpftodit			pagesize			syscallbypid.d
+bzdiff				hpmdiagnose			pagestuff			syscallbyproc.d
+bzegrep				htmltree			par.pl				syscallbysysc.d
+bzfgrep				htmltree5.18			par5.18.pl			sysdiagnose
+bzgrep				ibtool				parl				syslog
+bzip2				iconutil			parl5.18			systriage
+bzip2recover			iconv				parldyn				tab2space
+bzless				ictool				parldyn5.18			tabs
+bzmore				id				passwd				tail
+c++				idle				paste				tailspin
+c++filt				idle2.7				patch				talk
+c2ph				idlj				pathchk				tar
+c2ph5.18			imptrace			pathopens.d			taskinfo
+c89				indent				pbcopy				tbl
+c99				indxbib				pbpaste				tbtdiagnose
+caffeinate			info				pcap-config			tccutil
+cal				infocmp				pcsctest			tclsh
+calendar			infokey				perl				tclsh8.5
+cancel				infotocap			perl5.18			tee
+cap_mkdb			install				perlbug				texi2dvi
+captoinfo			install-info			perlbug5.18			texi2pdf
+cc				install_name_tool		perldoc				texindex
+cd				instmodsh			perldoc5.18			textutil
+certtool			instmodsh5.18			perlivp				tfmtodit
+checknr				instruments			perlivp5.18			tftp
+chflags				iofile.d			perlthanks			thermal
+chfn				iofileb.d			perlthanks5.18			tic
+chgrp				iopattern			pfbtops				tidy
+chpass				iopending			pgrep				tiff2icns
+chsh				iosnoop				phar				tiffutil
+cksum				iotop				phar.phar			time
+clang				ip2cc				php				timer_analyser.d
+clang++				ip2cc5.18			php-config			timerfires
+clear				ipcount				phpize				tkcon
+cmp				ipcount5.18			pic				tkmib
+cmpdylib			ipcrm				pico				tkpp
+codesign			ipcs				piconv				tkpp5.18
+codesign_allocate		ippfind				piconv5.18			tmdiagnose
+col				ipptool				pidpersec.d			tmutil
+colcrt				iprofiler			pkgbuild			tnameserv
+colldef				iptab				pkill				toe
+colrm				iptab5.18			pl				top
+column				irb				pl2pm				tops
+comm				jar				pl2pm5.18			topsyscall
+command				jarsigner			plockstat			topsysproc
+compress			java				pluginkit			touch
+compression_tool		javac				plutil				tput
+config_data			javadoc				pmset				tr
+config_data5.18			javah				pod2html			trace
+corebrightnessdiag		javap				pod2html5.18			traptoemail
+corelist			javapackager			pod2latex			treereg
+corelist5.18			javaws				pod2latex5.18			treereg5.18
+cpan				jcmd				pod2man				trimforce
+cpan2dist			jconsole			pod2man5.18			troff
+cpan2dist5.18			jcontrol			pod2readme			true
+cpan5.18			jdb				pod2readme5.18			tset
+cpanp				jdeps				pod2text			tsort
+cpanp-run-perl			jhat				pod2text5.18			tty
+cpanp-run-perl5.18		jhsdb				pod2usage			type
+cpanp5.18			jimage				pod2usage5.18			ul
+cpio				jinfo				podchecker			ulimit
+cpp				jjs				podchecker5.18			umask
+cpu_profiler.d			jmap				podselect			unalias
+cpuwalk.d			jmc				podselect5.18			uname
+crc32				jobs				policytool			uncompress
+crc325.18			join				post-grohtml			unexpand
+creatbyproc.d			jot				power_report.sh			unifdef
+crlrefresh			jps				powermetrics			unifdefall
+crontab				jrunscript			pp				uniq
+csdiagnose			jsadebugd			pp5.18				units
+csgather			jshell				ppdc				unpack200
+csplit				json_pp				ppdhtml				unvis
+csreq				json_pp5.18			ppdi				unzip
+csrutil				jstack				ppdmerge			unzipsfx
+ctags				jstat				ppdpo				update_dyld_shared_cache
+ctf_insert			jstatd				pr				uptime
+cu				jvisualvm			pre-grohtml			usbkdp
+cups-config			kcc				priclass.d			users
+cupstestdsc			kdestroy			pridist.d			uucp
+cupstestppd			kextutil			printenv			uudecode
+curl				keytool				printf				uuencode
+curl-config			kgetcred			procsystime			uuidgen
+cut				kill.d				productbuild			uulog
+cvaffinity			killall				productsign			uuname
+cvcp				kinit				profiles			uupick
+cvmkdir				klist				prove				uustat
+cvmkfile			kpasswd				prove5.18			uuto
+dappprof			krb5-config			psed				uux
+dapptrace			kswitch				psed5.18			vi
+darwinup			ktrace				pstopdf				view
+db_archive			lam				pstruct				vim
+db_checkpoint			last				pstruct5.18			vimdiff
+db_codegen			lastcomm			ptar				vimtutor
+db_deadlock			lastwords			ptar5.18			vis
+db_dump				latency				ptardiff			vm_stat
+db_hotbackup			layerutil			ptardiff5.18			vmmap
+db_load				ld				ptargrep			vmmap32
+db_printlog			ldapadd				ptargrep5.18			w
+db_recover			ldapcompare			pubsub				wait
+db_stat				ldapdelete			pwhich				wall
+db_upgrade			ldapexop			pwhich5.18			wc
+db_verify			ldapmodify			pwpolicy			wdutil
+dbicadmin			ldapmodrdn			pydoc				what
+dbicadmin5.18			ldappasswd			pydoc2.7			whatis
+dbilogstrip			ldapsearch			python				whereis
+dbilogstrip5.18			ldapurl				python-config			which
+dbiprof				ldapwhoami			python2.7			who
+dbiprof5.18			leaks				python2.7-config		whoami
+dbiproxy			leaks32				pythonw				whois
+dbiproxy5.18			leave				pythonw2.7			wish
+dc				less				qc2movie			wish8.5
+debinhex.pl			lessecho			qlmanage			write
+debinhex5.18.pl			lex				qtdefaults			wsgen
+defaults			libnetcfg			qtmodernizer			wsimport
+delv				libnetcfg5.18			quota				xar
+desdp				libtool				rails				xargs
+diagnose-fu			lipo				rake				xattr
+diff				lkbib				ranlib				xattr-2.7
+diff3				lldb				rdoc				xcode-select
+diffstat			llvm-g++			read				xcodebuild
+dig				llvm-gcc			readlink			xcrun
+dirname				loads.d				rebase				xcscontrol
+dispqlen.d			locale				redo_prebinding			xcsdiagnose
+ditto				localedef			refer				xed
+dmc				locate				renice				xgettext.pl
+dns-sd				lockstat			reset				xgettext5.18.pl
+drutil				log				resolveLinks			xip
+dscacheutil			logger				rev				xjc
+dscl				login				ri				xml2-config
+dserr				logname				rmic				xml2man
+dsexport			look				rmid				xmlcatalog
+dsimport			lookbib				rmiregistry			xmllint
+dsmemberutil			lorder				rpcgen				xpath
+dsymutil			lp				rs				xpath5.18
+dtruss				lpoptions			rsync				xslt-config
+du				lpq				ruby				xsltproc
+dwarfdump			lpr				rvictl				xsubpp
+easy_install			lprm				rview				xsubpp5.18
+easy_install-2.7		lpstat				rvim				xxd
+egrep				lsappinfo			rwbypid.d			yaa
+emacs				lsbom				rwbytype.d			yacc
+emacs-undumped			lskq				rwsnoop				yes
+emacsclient			lsm				s2p				zcat
+enc2xs				lsmp				s2p5.18				zcmp
+enc2xs5.18			lsvfs				safaridriver			zdiff
+encode_keychange		lwp-download			sample				zegrep
+env				lwp-download5.18		sampleproc			zfgrep
+eqn				lwp-dump			sandbox-exec			zforce
+erb				lwp-dump5.18			say				zgrep
+errinfo				lwp-mirror			sc_usage			zip
+etags				lwp-mirror5.18			scandeps.pl			zipcloak
+ex				lwp-request			scandeps5.18.pl			zipdetails
+execsnoop			lwp-request5.18			schemagen			zipdetails5.18
+expand				m4				scp				zipgrep
+expect				macbinary			screen				zipinfo
+extcheck			macerror			script				zipnote
+eyapp				macerror5.18			sdef				zipsplit
+eyapp5.18			machine				sdiff				zless
+false				mail				sdp				zmore
+fc				mailq				sdx				znew
+fddist				mailx				security			zprint
+fdesetup			make				sed
+fg				makeinfo			seeksize.d
+fgrep				malloc_history			segedit
+yanns-imac:bin Eyesbreakers$ cd ..
+yanns-imac:usr Eyesbreakers$ cd local/
+yanns-imac:local Eyesbreakers$ ls
+Caskroom	Frameworks	bin		git		lib		opt		sbin		var
+Cellar		Homebrew	etc		include		n		remotedesktop	share
+yanns-imac:local Eyesbreakers$ cd ..
+yanns-imac:usr Eyesbreakers$ cd ..
+yanns-imac:/ Eyesbreakers$ ls
+Applications			Users				etc				sbin
+Icon?				Volumes				home				tmp
+Library				bin				installer.failurerequests	usr
+Network				cores				net				var
+System				dev				private
+yanns-imac:/ Eyesbreakers$ cd Users
+yanns-imac:Users Eyesbreakers$ ls
+Eyesbreakers	Icon?		Shared		kymaniyade
+yanns-imac:Users Eyesbreakers$ cd Eyesbreakers
+yanns-imac:~ Eyesbreakers$ ls
+Adobe				Downloads			Music				composer-setup 19.33.15.php
+Applications			Icon?				Pictures			mongodb-macos-x86_64-4.4.4
+Desktop				Library				Public
+Documents			Movies				bin
+yanns-imac:~ Eyesbreakers$ cd 
+.CFUserTextEncoding          .bash_profile.save.5         .hgignore_global             Icon^M
+.DS_Store                    .bash_profile.save.6         .npm/                        Library/
+.Trash/                      .bash_sessions/              .nvm/                        Movies/
+.adobe/                      .bashrc                      .phpls/                      Music/
+.bash_history                .composer/                   .viminfo                     Pictures/
+.bash_profile                .config/                     .vscode/                     Public/
+.bash_profile.save           .cups/                       Adobe/                       bin/
+.bash_profile.save.1         .gitconfig                   Applications/                composer-setup 19.33.15.php
+.bash_profile.save.2         .gitflow_export              Desktop/                     mongodb-macos-x86_64-4.4.4/
+.bash_profile.save.3         .gitignore_global            Documents/                   
+.bash_profile.save.4         .gitkraken/                  Downloads/                   
+yanns-imac:~ Eyesbreakers$ cd 
+.CFUserTextEncoding          .bash_profile.save.5         .hgignore_global             Icon^M
+.DS_Store                    .bash_profile.save.6         .npm/                        Library/
+.Trash/                      .bash_sessions/              .nvm/                        Movies/
+.adobe/                      .bashrc                      .phpls/                      Music/
+.bash_history                .composer/                   .viminfo                     Pictures/
+.bash_profile                .config/                     .vscode/                     Public/
+.bash_profile.save           .cups/                       Adobe/                       bin/
+.bash_profile.save.1         .gitconfig                   Applications/                composer-setup 19.33.15.php
+.bash_profile.save.2         .gitflow_export              Desktop/                     mongodb-macos-x86_64-4.4.4/
+.bash_profile.save.3         .gitignore_global            Documents/                   
+.bash_profile.save.4         .gitkraken/                  Downloads/                   
+yanns-imac:~ Eyesbreakers$ cd mongodb-macos-x86_64-4.4.4/
+yanns-imac:mongodb-macos-x86_64-4.4.4 Eyesbreakers$ pwd
+/Users/Eyesbreakers/mongodb-macos-x86_64-4.4.4
+yanns-imac:mongodb-macos-x86_64-4.4.4 Eyesbreakers$ sudo nano /etc/paths
+Password:
+yanns-imac:mongodb-macos-x86_64-4.4.4 Eyesbreakers$ 
+
+
+Last login: Tue Apr  6 13:58:55 on ttys000
+yanns-imac:~ Eyesbreakers$ cat /etc/paths 
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+/Users/Eyesbreakers/mongodb-macos-x86_64-4.4.4/bin
+yanns-imac:~ Eyesbreakers$ mongodb -v
+-bash: mongodb: command not found
+yanns-imac:~ Eyesbreakers$ mongod -v
+{"t":{"$date":"2021-04-06T14:14:47.701+02:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2021-04-06T14:14:47.719+02:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+{"t":{"$date":"2021-04-06T14:14:47.719+02:00"},"s":"I",  "c":"NETWORK",  "id":4648602, "ctx":"main","msg":"Implicit TCP FastOpen in use."}
+{"t":{"$date":"2021-04-06T14:14:47.721+02:00"},"s":"D1", "c":"NETWORK",  "id":22940,   "ctx":"main","msg":"file descriptor and connection resource limits","attr":{"hard":9223372036854775807,"soft":256,"conn":204}}
+{"t":{"$date":"2021-04-06T14:14:47.722+02:00"},"s":"I",  "c":"STORAGE",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":5132,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"yanns-imac.home"}}
+{"t":{"$date":"2021-04-06T14:14:47.722+02:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"4.4.4","gitVersion":"8db30a63db1a9d84bdcad0c83369623f708e0397","modules":[],"allocator":"system","environment":{"distarch":"x86_64","target_arch":"x86_64"}}}}
+{"t":{"$date":"2021-04-06T14:14:47.722+02:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Mac OS X","version":"18.7.0"}}}
+{"t":{"$date":"2021-04-06T14:14:47.722+02:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"systemLog":{"verbosity":1}}}}
+{"t":{"$date":"2021-04-06T14:14:47.722+02:00"},"s":"D1", "c":"NETWORK",  "id":22940,   "ctx":"initandlisten","msg":"file descriptor and connection resource limits","attr":{"hard":9223372036854775807,"soft":256,"conn":204}}
+{"t":{"$date":"2021-04-06T14:14:47.724+02:00"},"s":"D1", "c":"EXECUTOR", "id":23104,   "ctx":"OCSPManagerHTTP-0","msg":"Starting thread","attr":{"threadName":"OCSPManagerHTTP-0","poolName":"OCSPManagerHTTP"}}
+{"t":{"$date":"2021-04-06T14:14:47.726+02:00"},"s":"D1", "c":"-",        "id":23074,   "ctx":"initandlisten","msg":"User assertion","attr":{"error":"NonExistentPath: Data directory /data/db not found. Create the missing directory or specify another path using (1) the --dbpath command line option, or (2) by adding the 'storage.dbPath' option in the configuration file.","file":"src/mongo/db/storage/storage_engine_init.cpp","line":211}}
+{"t":{"$date":"2021-04-06T14:14:47.728+02:00"},"s":"E",  "c":"STORAGE",  "id":20557,   "ctx":"initandlisten","msg":"DBException in initAndListen, terminating","attr":{"error":"NonExistentPath: Data directory /data/db not found. Create the missing directory or specify another path using (1) the --dbpath command line option, or (2) by adding the 'storage.dbPath' option in the configuration file."}}
+{"t":{"$date":"2021-04-06T14:14:47.729+02:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"initandlisten","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":10000}}
+{"t":{"$date":"2021-04-06T14:14:47.729+02:00"},"s":"D1", "c":"-",        "id":23074,   "ctx":"initandlisten","msg":"User assertion","attr":{"error":"NotWritablePrimary: not primary so can't step down","file":"src/mongo/db/repl/replication_coordinator_impl.cpp","line":2489}}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"initandlisten","msg":"Shutting down the MirrorMaestro"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"initandlisten","msg":"Shutting down the WaitForMajorityService"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"initandlisten","msg":"Shutdown: going to close listening sockets"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"initandlisten","msg":"Shutting down the global connection pool"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"STORAGE",  "id":4784906, "ctx":"initandlisten","msg":"Shutting down the FlowControlTicketholder"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"initandlisten","msg":"Stopping further Flow Control ticket acquisitions."}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"initandlisten","msg":"Shutting down the ReplicaSetMonitor"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"initandlisten","msg":"Shutting down the MigrationUtilExecutor"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"initandlisten","msg":"Shutting down free monitoring"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"STORAGE",  "id":4784927, "ctx":"initandlisten","msg":"Shutting down the HealthLog"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"STORAGE",  "id":4784929, "ctx":"initandlisten","msg":"Acquiring the global lock for shutdown"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"initandlisten","msg":"Dropping the scope cache for shutdown"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"FTDC",     "id":4784926, "ctx":"initandlisten","msg":"Shutting down full-time data capture"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"initandlisten","msg":"Now exiting"}
+{"t":{"$date":"2021-04-06T14:14:47.730+02:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"initandlisten","msg":"Shutting down","attr":{"exitCode":100}}
+yanns-imac:~ Eyesbreakers$ mkdir -p /data/db
+mkdir: /data/db: Permission denied
+yanns-imac:~ Eyesbreakers$ sudo mkdir -p /data/db
+Password:
+yanns-imac:~ Eyesbreakers$ man mkdir
+yanns-imac:~ Eyesbreakers$ ls -la /data
+total 0
+drwxr-xr-x   3 root  wheel    96 Apr  6 14:18 .
+drwxr-xr-x  32 root  wheel  1024 Apr  6 14:18 ..
+drwxr-xr-x   2 root  wheel    64 Apr  6 14:18 db
+yanns-imac:~ Eyesbreakers$ sudo chown -R Eyesbreakers:Eyesbreakers /data
+Password:
+chown: Eyesbreakers: illegal group name
+yanns-imac:~ Eyesbreakers$ sudo chown -R Eyesbreakers:wheel /data
+yanns-imac:~ Eyesbreakers$ ls -la /data
+total 0
+drwxr-xr-x   3 Eyesbreakers  wheel    96 Apr  6 14:18 .
+drwxr-xr-x  32 root          wheel  1024 Apr  6 14:18 ..
+drwxr-xr-x   2 Eyesbreakers  wheel    64 Apr  6 14:18 db
+yanns-imac:~ Eyesbreakers$ 
+yanns-imac:~ Eyesbreakers$ mongod -vnpm 
