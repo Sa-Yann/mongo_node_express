@@ -7,48 +7,55 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'MongoDB avec Express/node.js' });
 });
 
-// Code Step 1 : Confirmation de connection a la base de donnéee en  localhost:27017
-// import { MongoClient } from 'mongodb'
-let MongoClient = require('mongodb');
+// // Code Step 1 : Confirmation de connection a la base de donnéee en  localhost:27017
+// // link: https://www.mongodb.com/what-is-mongodb
+// // import { MongoClient } from 'mongodb'
+// let MongoClient = require('mongodb');
 
-async function connect () {
-  // Connection URL
-  const url = 'mongodb://localhost:27017/turlututu'
+// async function connect () {
+//   // Connection URL
+//   const url = 'mongodb://localhost:27017/'
 
-  let db
+//   let db
 
-  try {
-    db = await MongoClient.connect(url)
-    console.log('Connected successfully!')
-  } catch (err) {
-    // on rajoute un console.log(err) pour afficher les erreurs si pas de connectoin
-    console.log(err);
-    // Handle error
-  }
+//   try {
+//     db = await MongoClient.connect(url)
+//     console.log('Connected successfully!')
+//   } catch (err) {
+//     // on rajoute un console.log(err) pour afficher les erreurs si pas de connectoin
+//     console.warning(`verifier que le serveur mngodb est boien installe et lancé dds un second terminal`);
+//     console.log(err);
+//     // Handle error
+//   }
 
-  return db
-}
+//   return db
+// }
 
-connect();
+// connect();
 
-// const MongoClient = require('mongodb').MongoClient;
-// const assert = require('assert');
 
-// // Connection URL
-// const url = 'mongodb://localhost:27017/';
+// Code Step 2: Connect to MongoDB : https://www.npmjs.com/package/mongodb
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
 
-// // Database Name
-// const dbName = 'admin';
-// const client = new MongoClient(url);
-// // Use connect method to connect to the server
-// client.connect(function(err) {
-//   assert.strictEqual(null, err);
-//   console.log('Connected successfully to server');
+// Connection URL
+const url = 'mongodb://localhost:27017';
 
-//   const db = client.db(dbName);
+// Database Name
+const dbName = 'admin';
+// Utilisation du constructeur MongoClient
+// Passer { useUnifiedTopology: true } en argument 
+// pour pouvoir échanger avec le serveur
+const client = new MongoClient(url, { useUnifiedTopology: true });
+// Use connect method to connect to the server
+client.connect(function(err) {
+  assert.strictEqual(null, err);
+  console.log('Connected successfully to server');
 
-//   client.close();
-// });
+  const db = client.db(dbName);
+
+  client.close();
+});
 
 
 
