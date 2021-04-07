@@ -29,15 +29,34 @@ client.connect(function(err) {
 
   const db = client.db(dbName);
   // on test insertDocuments en mettant bien le parametre db
-  insertDocuments (db)
+  // insertDocuments (db) est executé dans parallele pour utiliser le promise.all
+  // insertDocuments (db)
+  parallel(db, client)
 // CLient.colse() ferme la conncetionavant trop tot dc o comment ds un 1er temps
   // client.close();
 });
 
+  const parallel = async function (db,client){
+    console.log(`Fonction d'execution en parallele avec await Promise.all==`);
+    //  Démarer plusiseurs taches en parallele et on reste ouvert tant qu ece n est pas fini
+    await Promise.all([
+      insertDocuments (db, 1),
+      insertDocuments (db, 2),
+      insertDocuments (db, 3),
+      insertDocuments (db, 4),
+      insertDocuments (db, 5)
+    ]);
+    console.log(`fin d'execution du promise.all`);
+    client.close();
+    console.log(`client.close() cloture la connexion une fois les tâches accomplies`)
+  };
+
 // fonction async insertDocument
-async function insertDocuments (db) {
+async function insertDocuments (db ,nomDuDoc) {
   // Get the documents collection
-  const collection = db.collection('testcollection')
+  const collection = db.collection('testcollection');
+
+  console.log(`lancemeant de la demande du Document ${nomDuDoc}`)
 
   // Insert some documents
   const result = await collection.insertMany([
@@ -64,6 +83,8 @@ async function insertDocuments (db) {
       Couleur_shirt:"Purple",
     }
   ])
+
+  console.log(`un console log dans le document ${nomDuDoc} pour montrer qud il est éxecuté`);
 
   return result
 }
