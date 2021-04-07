@@ -43,6 +43,8 @@ client.connect(function(err) {
       insertDocuments (db, 1),
       insertDocuments (db, 2),
       insertDocuments (db, 3),
+      indexCollection (db),
+      findDocuments (db),
       insertDocuments (db, 4),
       insertDocuments (db, 5)
     ]);
@@ -88,6 +90,36 @@ async function insertDocuments (db ,nomDuDoc) {
 
   return result
 }
+// Fonction Query de récupération de toutes les données de la Bdd
+async function findDocuments (db) {
+  const collection = db.collection('testcollection')
+
+  const docs = await collection.find({}).toArray()
+
+  console.log('Found the following records')
+  console.log(docs)
+
+  return docs
+}
+
+// building an index on the name field with sort order ascending
+async function indexCollection (db) {
+  const collection = db.collection('New-collection')
+  try {
+    const result = await collection.createIndex({
+      gender: 1
+      
+    })
+    console.log(gender);
+    return result
+  } catch (error) {
+    console.log(error);
+  }
+  
+}
+
+
+
 
 // // Code Step 2: Connect to MongoDB : https://www.npmjs.com/package/mongodb
 // const MongoClient = require('mongodb').MongoClient;
